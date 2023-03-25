@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<website_1.Models.DICHVU>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="~/Content/idet.css" rel="stylesheet" />
+<div class=" col-3">
+    @foreach (var dsDV in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="img-thumbnail">
+                <a href="@Url.Action("https://localhost:44363/Dichvu/dv","Website",new { id = dsDV.MaDv})">
+                    <img alt="@dsDV.TenDv" src="~/Content/ba-na-hill-2.jpg" width="200" />
+                </a>
+            </div>
+            <h4 style="text-align:center">
+                @dsDV.TenDv
+            </h4>
+            <h5 style="text-align:center">
+                @dsDV.MoTa
+            </h5>
+            <h5 style="text-align:center">
+                @dsDV.NgayCapphat
+            </h5>
+        </div>
+    }
+</div>

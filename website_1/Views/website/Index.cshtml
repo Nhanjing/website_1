@@ -1,0 +1,74 @@
+﻿@model IEnumerable<website_1.Models.TINTUC>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="~/Content/idet.css" rel="stylesheet" />
+<h2 style="text-align:center"> Địa Điểm </h2>
+<div class="column">
+    <div class="col-4">
+
+        <img src="~/Content/backgrounf_gt.jpg" />
+        <div class="col-4">
+            <img src="~/Content/Background-1.jpeg" />
+        </div>
+        <div class="col-4">
+            <img src="~/Content/backgroung-4.jpg" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-2">
+        <img src="~/Content/Header.png"  width="125px"/>
+    </div>
+    <div class="col-2">
+        <h1> Wellcome to bana hills</h1>
+        <b> <p style="color: rgb(17, 17, 17);">Đến với Sun World Ba Na Hills, du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo, đắm chìm trong cảnh quan thiên nhiên của những cánh rừng nguyên sinh nối tiếp ở Bà Nà Núi Chúa, thưởng thức ẩm thực đa dạng và tận hưởng không khí lễ hội ngập tràn.</p></b>
+    </div>
+</div>
+<div class="col-9">
+    <center>
+        @foreach (var tintuc in Model)
+        {
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="img-thumbnail">
+                    <a href="@Url.Action("Website",new { id = tintuc.MaTT})">
+                        <img alt="@tintuc.TenTT" src="~/Content/ba-na-hill-2.jpg" width="200" />
+                    </a>
+                </div>
+                <div class=" stick-post">
+                <p > Noi Bat </p>
+                    </div>
+                <h4 style="text-align:center">
+                    @tintuc.TenTT
+                </h4>
+                <h5 style="text-align:center">
+                    @tintuc.MoTa
+                </h5>
+            </div>
+
+        }
+    </center>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <p>Hình ảnh cầu vàng hùng vĩ trong ánh chiều tà </p>
+                <img src="~/Content/backgrounf_gt.jpg" />
+            </div>
+            <div class="col-2">
+                <div class="foot-col-3">
+                    <p>Hình ảnh một làng pháp cổ điện giữa bình minh đậm buồn </p>
+                    <img src="~/Content/Background-1.jpeg" />
+
+                </div>
+                <div class="foot-col-3">
+                    <p>Thưởng cảnh cùng cáp treo lên tới định cao mới </p>
+                    <img src="~/Content/backgroung-4.jpg" />
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial; /*Định Dạng theo kiểu chữ cho thành phần */
+    padding: 10px;
+    background: #eda04e70;
+}
+
+.header {
+    background-image: url('pr-6.jpg');
+    padding: 10px;
+    text-align: center; /* xắp xép chữ theo chiều ngang */
+    /*background: white;*/ /*chi dungf mot trong 2 dong back ground */
+    color: #0b0b0a;
+}
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+
+.Menu {
+    overflow: hidden; /*ác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung*/
+    background-color: #eda04e70;
+}
+
+    .Menu a {
+        float: left; /* xac dinh su troi noi cua thanh phan*/
+        display: block; /* xac dinh su hien thi thanh phan , chuyen doi tu dang nay sang dang khac */
+        color: rgb(5, 5, 5);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .Menu a:hover {
+            background-color: rgb(238, 182, 98);
+            color: rgb(18, 19, 20);
+        }
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+    .footer .foot-col-phai {
+        width: 30%;
+        text-align: center;
+    }
+
+    .footer .foot-col-center {
+        width: 30%;
+        text-align: center;
+    }
+
+    .footer .foot-col-trai {
+        width: 30%;
+        text-align: center;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    .footer img {
+        align-items: center;
+        width: 60%;
+    }

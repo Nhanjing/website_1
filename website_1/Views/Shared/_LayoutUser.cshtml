@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Website.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header" style="height:30%;">
+        <img src="~/Content/logo_nhom.png" />
+        <h1>Wellcome To Ba Na Hills</h1>
+        <p>Lãng Mãn - Hùng Vĩ - Tiên Cảnh </p>
+    </div>
+    <div class="Menu">
+        <ul>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giới Thiệu </a>
+            <a href="https://localhost:44363/Dichvu/Index">Tham Khảo </a>
+            <a href="https://localhost:44363/User/DANGNHAP" style="float: right;">Đăng Nhập </a>
+        </ul>
+    </div>
+    <div class=" main">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer" style="background-color: rgb(237, 228, 228);">
+        <div class="foot-col-phai">
+            <img src="~/Content/logo_nhom.png" />
+        </div>
+        <div class="foot-col-center">
+            <p>Thông tin Liên Lạc :</p>
+            <p>
+                Email :
+                <br />
+                Địa Chỉ :
+            </p>
+        </div>
+        <div class="foot-col-trai">
+            <p> Thông Tin Nhà Tài Trợ :</p>
+        </div>
+        <div class="button">
+            <a href=" https://localhost:44363/User/DangKy" class="btn">Đăng Ký </a>
+        </div>
+    </div>
+
+</body>
+</html>

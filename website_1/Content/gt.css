@@ -1,0 +1,87 @@
+﻿.row {
+    display: flex;
+    text-align: right;
+}
+
+.header .row {
+    margin-right: 70px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+    .col-2 img {
+        max-width: 300px;
+        padding: 50px 0;
+    }
+
+    .col-2 h1 {
+        line-height: 60px;
+        margin: 25px 0;
+    }
+
+    .col-2 p {
+        color: rgb(9, 12, 12);
+    }
+/**/
+.footer {
+    padding: 100px;
+    page-break-inside: auto;
+}
+
+    .footer .row {
+        margin-right: auto;
+    }
+
+.foot-col-1 {
+    padding-top: 120px;
+    padding-left: 90px;
+    padding-bottom: 30px;
+}
+
+.foot-col-2 {
+    padding-top: 50px;
+    padding-left: 90px;
+    padding-bottom: 30px;
+}
+
+/**/
+.brand {
+    margin: 70px auto;
+    background-color: rgb(236, 155, 56);
+}
+
+.col-4 {
+    width: 290px;
+}
+
+    .col-4 img {
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+    }
+
+        .col-4 img:hover {
+            filter: grayscale(0);
+        }
+
+    .col-4 p {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+    .btn :hover {
+        background: #563434;
+    }
